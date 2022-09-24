@@ -2,12 +2,15 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
+import 'mdb-react-ui-kit/dist/css/mdb.min.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 import { Route, BrowserRouter as Router, Routes } from 'react-router-dom';
 // import { Route, BrowserRouter as Router, Routes } from 'react-router-dom';
 import Header from './components/header';
 import Footer from './components/footer'
+import SignUp from './components/register';
+import SignIn from './components/login';
 
 
 
@@ -21,6 +24,8 @@ const routing = (
       <Header />
       <Routes>
         <Route exact path="/" element={<App />} />
+        <Route path="register/" element={<SignUp />}/>
+        <Route path="login/" element={<SignIn />}/>
       </Routes>
       <Footer />
     </React.StrictMode>
