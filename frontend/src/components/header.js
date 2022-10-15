@@ -45,9 +45,15 @@ function Header() {
           Login
           </NavLink>
           </NavDropdown.Item>
-        <NavDropdown.Item eventKey="4.3">Something else here</NavDropdown.Item>
+        {/* <NavDropdown.Item eventKey="4.3">Something else here</NavDropdown.Item> */}
         <NavDropdown.Divider />
-        <NavDropdown.Item eventKey="4.4">Separated link</NavDropdown.Item>
+        <NavDropdown.Item eventKey="4.4">
+        <NavLink
+          to='logout/'
+          >
+          Logout
+          </NavLink>
+        </NavDropdown.Item>
       </NavDropdown>
     </Nav>
     </Container>
