@@ -4,7 +4,7 @@ import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import Button from 'react-bootstrap/Button';
 import Card from 'react-bootstrap/Card';
-
+import { Link } from 'react-router-dom';
 
 
 
@@ -25,7 +25,9 @@ const Posts = (props) =>{
                                             <Card.Text>
                                             {post.excerpt.substr(0, 60)}....
                                             </Card.Text>
+                                            <Link to={'post/' + post.slug}>
                                             <Button variant="primary">View post</Button>
+                                            </Link>
                                         </Card.Body>
                                     </Card>
                             </Col>

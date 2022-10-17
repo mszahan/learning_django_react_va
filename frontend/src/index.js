@@ -12,6 +12,7 @@ import Footer from './components/footer'
 import SignUp from './components/register';
 import SignIn from './components/login';
 import Logout from './components/logout';
+import PostDetial from './components/PostDetial';
 
 
 
@@ -28,6 +29,7 @@ const routing = (
         <Route path="register/" element={<SignUp />}/>
         <Route path="login/" element={<SignIn />}/>
         <Route path="logout/" element={<Logout />}/>
+        <Route path="post/:slug" element={<PostDetial />}/>
       </Routes>
       <Footer />
     </React.StrictMode>
